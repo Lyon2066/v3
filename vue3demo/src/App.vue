@@ -5,6 +5,5 @@
   <router-link to="/home">Home</router-link> -->
   <router-view />
 </template>
-
 <style scoped>
 </style>
