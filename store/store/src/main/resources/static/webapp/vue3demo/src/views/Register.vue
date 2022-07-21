@@ -24,7 +24,7 @@ export default defineComponent({
   },
   methods: {
     signIn() {
-      console.log("注册")
+      console.log("注册11")
       axios.get('/Lyon/users/reg?username=user144&password=12345678').then(res => {
         console.log(res)
       })
