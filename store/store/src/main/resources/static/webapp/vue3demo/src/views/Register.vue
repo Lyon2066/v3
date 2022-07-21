@@ -11,6 +11,7 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue"
 import axios from 'axios'
+import {Toast} from "vant"
 export default defineComponent({
   setup() {
     const userName = ref("")
@@ -24,9 +25,10 @@ export default defineComponent({
   },
   methods: {
     signIn() {
-      console.log("注册11")
+      console.log("点击注册")
       axios.get('/Lyon/users/reg?username=user144&password=12345678').then(res => {
         console.log(res)
+        Toast(res.data.message)
       })
     },
   },
