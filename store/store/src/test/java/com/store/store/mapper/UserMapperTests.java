@@ -50,4 +50,9 @@ public class UserMapperTests {
         }
 
     }
+    @Test
+    public void login() {
+        User user = userService.login("Lyon008","000");
+        System.out.println(user);
+    }
 }

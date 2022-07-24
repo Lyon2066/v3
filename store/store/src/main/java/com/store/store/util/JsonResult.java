@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class JsonResult<E> implements Serializable {
     private Integer state;
-    private String message;
+    private String message = "操作成功";
     // 不确定数据类型
     private E data;
 

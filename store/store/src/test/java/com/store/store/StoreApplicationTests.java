@@ -1,5 +1,6 @@
 package com.store.store;
 
+import com.store.store.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 
 @SpringBootTest
 class StoreApplicationTests {
-    @Autowired  // 自动装配
+    //@Autowired  // 自动装配
     private DataSource dataSource;
     @Test
     void contextLoads() {
