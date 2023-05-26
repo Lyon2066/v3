@@ -76,7 +76,7 @@ public class UserServiceImpl implements IUserService {
   }
 
   private String getMD5Password(String password, String salt) {
-    // 加密三次
+    // MD5加密三次
     for (int i = 0; i < 3; i++) {
       password = DigestUtils.md5DigestAsHex((salt + password + salt).getBytes()).toUpperCase();
     }

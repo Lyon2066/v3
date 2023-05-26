@@ -53,7 +53,7 @@ export default defineComponent({
         password: this.password
       }
       usersLogin(params).then((res: unknown) => {
-        console.log(res)
+        this.$router.replace({name: 'home',path: '/home'})
       })
     },
   },

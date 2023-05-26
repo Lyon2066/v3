@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    Lyon: {{Lyon}}
     <h1>{{count}} ddd </h1>
     <h2>{{getCount()}}</h2>
     <button @click="addNum">操作actionsFn</button>
@@ -18,7 +19,7 @@ export default defineComponent({
   components: {
   },
   computed:{
-    ...mapState(['count']),
+    ...mapState(['count', 'Lyon']),
   },
   methods: {
     ...mapActions(['addCount']),
@@ -28,11 +29,11 @@ export default defineComponent({
       // this.$store.dispatch("addCount",5)// 
       this.addCount(5)
     },
-    addNum_M(){
+    addNum_M() {
       // this.$store.commit("addCount_M",10)
       this.addCount_M(10)
     },
-    getVal(){
+    getVal() {
       const v = this.getCount()
       console.log(v)
     }

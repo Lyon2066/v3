@@ -1,7 +1,8 @@
 import { createStore} from "vuex"
 const store = createStore({
   state: {
-    count: 0
+    count: 0,
+    Lyon: '好好努力拉磨，不然卸磨杀驴'
   },
   actions: {
     addCount({state,commit},data){

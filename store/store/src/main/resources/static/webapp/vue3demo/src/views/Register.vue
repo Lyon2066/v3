@@ -15,9 +15,9 @@ import {usersReg} from '../util/LyonApi'
 
 export default defineComponent({
   setup() {
-    const userName = ref("")
-    const phone = ref("")
-    const password = ref("")
+    const userName = ref("Lyon")
+    const phone = ref("13818204488")
+    const password = ref("123123")
     return {userName, phone, password}
   },
   name: "Login",
