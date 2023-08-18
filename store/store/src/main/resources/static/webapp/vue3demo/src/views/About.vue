@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from "../components/HelloWorld.vue"
+import Banner from "../components/Banner.vue"
 import { ref, defineComponent, defineProps } from "vue"
 defineProps<{ msg: string }>()
 
@@ -8,7 +8,7 @@ const addCount = () => {
   console.log(count.value)
 }
 defineComponents:{
-  HelloWorld
+  Banner
 }
 // export default defineComponent({
 //   setup() {},

@@ -15,10 +15,12 @@ create_user,
 create_time,
 modified_user,
 modified_time
--- 创建 table lyon  222
-create table t_user
+-- 在lyon数据库中 创建一个table： t_user
+show databases;
+use lyon;
+create table if not exists t_user
 (
-    uid int(100),
+    uid int(100) auto_increment,
     username varchar(255),
     password varchar(255),
     salt varchar(255),

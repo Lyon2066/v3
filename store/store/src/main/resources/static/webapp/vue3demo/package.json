@@ -9,12 +9,15 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "vant": "^3.5.2",
-    "vue": "^3.2.25",
+    "pinia": "^2.0.22 ",
+    "sass": "^1.65.1",
+    "vant": "^4.0.11",
+    "vue": "^3.3.2",
     "vue-router": "^4.0.16",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@types/node": "^20.5.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.21.1",
